@@ -1,0 +1,36 @@
+STEP 1
+A. Struktur Dataset
+
+1. Tabel Transaksi Keuangan
+
+Kolom: tahun, pendapatan, beban_operasional, penyusutan, skenario
+
+
+
+2. Tabel Aset Tetap
+
+Kolom: aset_id, kategori, nilai_perolehan, umur_ekonomis, metode
+
+
+
+3. Tabel Kebijakan Fiskal
+
+Kolom: tahun, tax_rate, tax_holiday_awal, tax_holiday_akhir
+ buatlah tabel yg bisa saya download untuk bigquerry dengan format CSV
+
+STEP 2
+melalui data di atas, Dari tabel diatas, saya merupakan pengguna google bigquery yang hendak mengetahui dan membuat beberap simulasi, antara lain
+A.	Simulasi Laba/Rugi Tiap Skenario
+B.	Simulasi Depresiasi dengan dua yaitu metode garis lurus dan Metode Saldo Menurun Ganda
+C.	Simulasi Tax Holiday
+Saya ingin membuat hasilnya, berikut juga dengan seluruh perhitungannya
+Perintah A (tabel pertama)
+Berdasarkan tabel transaksi keuangan di atas analisislah terlebih dahulu, kemudian asumsikan, bagaimana jika pada tahun tersebut perusahaan rugi, bagaimana dampak serta berapakah pajak yang harus di bayar sesuai kebijakan fiskal yang ada. Bagaimana jika tahun tersebut perusahaan laba, bagaimana kondisi pajak yang harus di bayar sesuai kebijakan fiskal yang ada. Buat kedua perintah tersebut sesuai dengan data yang ada, pada setiap tahun yang ada.
+Perintah B (tabel kedua)
+Berdasarkan data yang ada dalam tabel aset tetap, analisislah terlebih dahulu , kemudian asumsikan, bagaimana jika pada tahun tersebut perusahaan menggunakan metode penyusutan garis lurus, bagaimana dampak serta berapakah pajak yang harus di bayar sesuai kebijakan fiskal yang ada. Bagaimana jika tahun tersebut perusahaan saldo menurun ganda, bagaimana dampak serta berapakah pajak yang harus di bayar sesuai kebijakan fiskal yang ada. Buat kedua perintah tersebut sesuai dengan data yang ada, pada setiap tahun yang ada.
+Perintah C (tabel ketiga)
+Setelah perintah a dan b sesesai, asumsikan bagaimana jika pada tahun tersebut kedua perintah sebelumnya kena tax holiday, bagaimana dampak serta berapakah pajak yang harus di bayar sesuai kebijakan fiskal yang ada. Bagaimana jika tahun tersebut kedua perintah sebelumnya tidak kena tax holiday, bagaimana kondisi pajak yang harus di bayar sesuai kebijakan fiskal yang ada. Buat kedua perintah tersebut sesuai dengan data yang ada, pada setiap tahun yang ada.
+Saya ingin hasil yang dikeluarkan berbentuk tabel yang informatif, tanpa ada kolom yang tertulis ”null”, dengan bentuk desimal dan bermata uang (Rp)
+Berdasarkan permintaan saya diatas, tolong buatkan query SQL yang mendukung untuk menampilkan data data yang saya minta, harus sesuai dengan SQL yang saya lampirkan dibawah ini. Buatkan salam 1 sql saja
+Berikut adalah nama dataset dan tabel: “praktikumpph” untuk nama dataset “aset_tetap” untuk tabel aset tetap, “kebijakan_fiskal” untuk tabel kebijakan fiskal, dan “transaksi_keuangan” untuk tabel transaksi keuangan
+Buat juga grafiknya di looker studio dan buat agar tidak eror
